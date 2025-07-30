@@ -21,7 +21,7 @@ def start():
         strength = (sixDice * eightDice)/2 + 12
         print("Strength:", strength)
     strength()
-
+    return(legend) health, strength
     restart = input("Again?: ")
     while restart.lower() == "yes":
         os.system("clear")
