@@ -1,5 +1,7 @@
 from rich import print
-import os, time
+import os, time, traceback
+
+debugMode = False
 
 orders = [["Name", "Topping", "Size", "Quantity", "Total"]]
 
@@ -8,7 +10,8 @@ try:
     orders = eval(file.read())
     file.close()
 except:
-    print(Traceback)
+    if debugMode:
+        print(traceback)
 
 def prettyPrint():
     time.sleep(1)
